@@ -4,9 +4,9 @@ import { Link } from "react-scroll";
 
 const Intro = () => {
   return (
-    <section className="relative h-[calc(100vh-10rem)] w-full max-w-6xl mx-auto overflow-hidden flex items-center justify-between">
+    <section name="intro" className="relative h-[calc(100vh-10rem)] w-full max-w-7xl mx-auto overflow-hidden flex flex-col-reverse md:flex-row items-center justify-between p-8">
       {/* Text Content */}
-      <div className="flex flex-col justify-center h-full p-8 text-3xl font-semibold">
+      <div className="m-5 text-center md:text-left flex flex-col justify-center md:items-start items-center text-3xl font-semibold">
         <span className="text-xl font-light">Welcome,</span>
         <div>
           <span className="text-purple-800">Sean's </span>
@@ -17,23 +17,32 @@ const Intro = () => {
           <span>Full Stack Developer</span>
         </span>
         <p className="mt-4 text-lg font-light">
-          I welcome the opportunity to connect and explore how my skills
-          <br />
-          can contribute to your company's success!
+          Hi, I code for a living!
+          <br/>
+          <p>
+            I love every part of it! 💜
+          </p>
+          <br/>
+          <h8>
+            As you scroll through you will find my favorite color is purple! 💜
+          </h8>
         </p>
-        <Link>
+        <a
+          href = "/public/SeanNohResume (3).pdf"
+          download="SeanResume.pdf"
+          >
           <button className="flex items-center justify-center gap-2 px-8 py-2 mt-4 text-sm font-medium text-black transition-all duration-300 ease-in-out bg-white border-2 border-purple-800 rounded-full hover:bg-purple-800 hover:text-white hover:scale-105">
             <img src={hireme} alt="Contact Us" className="w-6" />
-            Hire!
+            Resume!
           </button>
-        </Link>
+        </a>
       </div>
       {/* Profile Image */}
-      <div className="flex-shrink-0">
+      <div className="flex-shrink-0 mt-20 md:mt-16 mb-8 md:mb-0">
         <img
           src={profilepic}
           alt="Profile"
-          className="w-80 h-80 border-2 border-white-800 rounded-full object-cover"
+          className="w-48 h-48 md:w-80 md:h-80 border-2 border-white-800 rounded-full object-cover"
         />
       </div>
     </section>

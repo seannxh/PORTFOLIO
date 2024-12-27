@@ -1,58 +1,78 @@
 import { useState } from "react";
 import { Link } from "react-scroll";
-import logo from "../../assets/logo3.png";
 import contactus from "../../assets/contactus.png";
+import logo from "../../assets/vision.jpeg";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-30 flex items-center justify-between h-20 w-full px-5 max-w-7xl mx-auto">
+    <nav className="sticky top-0 z-30 flex items-center justify-between h-20 w-full px-5 max-w-7xl mx-auto shadow-md">
       {/* Logo */}
       <img src={logo} alt="Logo" className="w-20 h-auto" />
 
       {/* Navbar Links (Desktop) */}
-      <div className="hidden md:flex space-x-4">
+      <div className="hidden md:flex space-x-6">
         <Link
-          to="home"
-          className="text-lg font-medium cursor-pointer hover:text-purple-800 transition"
+          to="intro"
+          smooth={true}
+          spy={true}
+          offset={-80}
+          duration={500}
+          activeClass="border-b-4 border-purple-800 text-purple-800"
+          className="text-lg font-medium cursor-pointer transition hover:text-purple-800"
         >
           Home
         </Link>
         <Link
           to="about"
-          className="text-lg font-medium cursor-pointer hover:text-purple-800 transition"
+          smooth={true}
+          spy={true}
+          offset={-80}
+          duration={500}
+          activeClass="border-b-4 border-purple-800 text-purple-800"
+          className="text-lg font-medium cursor-pointer transition hover:text-purple-800"
         >
           About
         </Link>
         <Link
           to="projects"
-          className="text-lg font-medium cursor-pointer hover:text-purple-800 transition"
+          smooth={true}
+          spy={true}
+          offset={-80}
+          duration={500}
+          activeClass="border-b-4 border-purple-800 text-purple-800"
+          className="text-lg font-medium cursor-pointer transition hover:text-purple-800"
         >
           Projects
         </Link>
         <Link
-          to="education"
-          className="text-lg font-medium cursor-pointer hover:text-purple-800 transition"
-        >
-          Education
-        </Link>
-        <Link
           to="skills"
-          className="text-lg font-medium cursor-pointer hover:text-purple-800 transition"
+          smooth={true}
+          spy={true}
+          offset={-80}
+          duration={500}
+          activeClass="border-b-4 border-purple-800 text-purple-800"
+          className="text-lg font-medium cursor-pointer transition hover:text-purple-800"
         >
           Skills
         </Link>
       </div>
 
       {/* Contact Button */}
-      <button className="hidden md:flex items-center justify-center gap-2 bg-white text-black border-2 border-purple-800 rounded-full px-4 py-2 text-lg font-medium transition-all hover:bg-purple-800 hover:text-white transform hover:scale-105">
-        <img src={contactus} alt="Contact" className="w-8 h-auto" />
-        Contact Me
-      </button>
+      <a 
+        href="https://mail.google.com/mail/?view=cm&fs=1&to=nohsean6@gmail.com&su=Inquiry&body=Hello%20Sean,"
+        target="_blank" 
+        rel="noopener noreferrer"
+      >
+        <button className="hidden md:flex items-center justify-center gap-2 bg-white text-black border-2 border-purple-800 rounded-full px-4 py-2 text-lg font-medium transition-all hover:bg-purple-800 hover:text-white transform hover:scale-105">
+          <img src={contactus} alt="Contact" className="w-8 h-auto" />
+          Contact Me
+        </button>
+      </a>
 
       {/* Hamburger Menu (Mobile) */}
-      <div className="md:hidden">
+      <div className="md:hidden relative">
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="text-purple-800 focus:outline-none"
@@ -72,48 +92,57 @@ const NavBar = () => {
             ></path>
           </svg>
         </button>
-      </div>
 
-      {/* Dropdown Menu (Mobile) */}
-      {isOpen && (
-        <div className="absolute top-16 left-1/2 transform -translate-x-1/2 rounded-lg p-5 w-3/4">
-          <Link
-            to="home"
-            className="block text-lg font-medium text-center cursor-pointer hover:text-purple-800 transition my-2"
-            onClick={() => setIsOpen(false)}
-          >
-            Home
-          </Link>
-          <Link
-            to="about"
-            className="block text-lg font-medium text-center cursor-pointer hover:text-purple-800 transition my-2"
-            onClick={() => setIsOpen(false)}
-          >
-            About
-          </Link>
-          <Link
-            to="projects"
-            className="block text-lg font-medium text-center cursor-pointer hover:text-purple-800 transition my-2"
-            onClick={() => setIsOpen(false)}
-          >
-            Projects
-          </Link>
-          <Link
-            to="education"
-            className="block text-lg font-medium text-center cursor-pointer hover:text-purple-800 transition my-2"
-            onClick={() => setIsOpen(false)}
-          >
-            Education
-          </Link>
-          <Link
-            to="skills"
-            className="block text-lg font-medium text-center cursor-pointer hover:text-purple-800 transition my-2"
-            onClick={() => setIsOpen(false)}
-          >
-            Skills
-          </Link>
-        </div>
-      )}
+        {/* Dropdown Menu */}
+        {isOpen && (
+          <div className="absolute top-12 right-0 w-48 bg-grey-800 shadow-lg rounded-lg py-2 z-40">
+            <Link
+              to="intro"
+              smooth={true}
+              spy={true}
+              offset={-80}
+              duration={500}
+              className="block px-4 py-2 text-white opacity-80 hover:bg-purple-100 hover:text-purple-800 cursor-pointer"
+              onClick={() => setIsOpen(false)}
+            >
+              Home
+            </Link>
+            <Link
+              to="about"
+              smooth={true}
+              spy={true}
+              offset={-80}
+              duration={500}
+              className="block px-4 py-2 text-white opacity-80 hover:bg-purple-100 hover:text-purple-800 cursor-pointer"
+              onClick={() => setIsOpen(false)}
+            >
+              About
+            </Link>
+            <Link
+              to="projects"
+              smooth={true}
+              spy={true}
+              offset={-80}
+              duration={500}
+              className="block px-4 py-2 text-white opacity-80 hover:bg-purple-100 hover:text-purple-800 cursor-pointer"
+              onClick={() => setIsOpen(false)}
+            >
+              Projects
+            </Link>
+            <Link
+              to="skills"
+              smooth={true}
+              spy={true}
+              offset={-80}
+              duration={500}
+              className="block px-4 py-2 text-white opacity-80 hover:bg-purple-100 hover:text-purple-800 cursor-pointer"
+              onClick={() => setIsOpen(false)}
+            >
+              Skills
+            </Link>
+          </div>
+        )}
+      </div>
     </nav>
   );
 };
