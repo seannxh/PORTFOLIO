@@ -1,0 +1,47 @@
+.typewriter-text {
+  font-family: 'font-light';
+  font-weight: 500;
+  font-size: 25px;
+  color: white;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.cursor {
+  display: inline-block;
+  width: 5px;
+  color: rgb(60, 5, 84);
+  background-color: rgb(60, 5, 84);
+  margin-left: 0;
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  0% {
+      opacity: 1;
+  }
+  50% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+.typewriter-container {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 768px) {
+  .typewriter-container {
+      font-size: 16px;
+      margin: 0;
+      padding: 0;
+  }
+}

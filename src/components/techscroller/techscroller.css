@@ -10,7 +10,7 @@
   .tech-scroller-container {
     position: relative;
     width: 100%;
-    background-color: #402e51; /* Match the dark theme */
+    background-color: #23083f; /* Match the dark theme */
     overflow: hidden;
     display: flex;
     justify-content: flex-start;
@@ -31,7 +31,7 @@
     padding: 8px 16px;
     text-align: center;
     background-color: white; /* Consistent dark background for items */
-    color: rgb(61, 5, 85); /* Light text color */
+    color: rgb(58, 4, 82); /* Light text color */
     margin: 0 12px;
     border-radius: 8px;
     font-size: 1.1rem; /* Slightly smaller text for consistency */

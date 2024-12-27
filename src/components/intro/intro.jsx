@@ -1,5 +1,6 @@
 import profilepic from "../../assets/profile.png";
 import hireme from "../../assets/getintouch.png";
+import Typer from "../typewriter/typewriter.jsx"
 import { Link } from "react-scroll";
 
 const Intro = () => {
@@ -7,7 +8,12 @@ const Intro = () => {
     <section name="intro" className="relative h-[calc(100vh-10rem)] w-full max-w-7xl mx-auto overflow-hidden flex flex-col-reverse md:flex-row items-center justify-between p-8">
       {/* Text Content */}
       <div className="m-5 text-center md:text-left flex flex-col justify-center md:items-start items-center text-3xl font-semibold">
-        <span className="text-xl font-light">Welcome,</span>
+      <Typer
+            phrases={["Welcome!", "Turning My Idea Into Reality"]}
+            speed={80}
+            deleteSpeed={50}
+            displayTime={2000}
+          />
         <div>
           <span className="text-purple-800">Sean's </span>
           <span>Portfolio</span>
