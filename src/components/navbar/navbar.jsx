@@ -102,7 +102,7 @@ const NavBar = () => {
               spy={true}
               offset={-80}
               duration={500}
-              className="block px-4 py-2 text-white opacity-80 hover:bg-purple-100 hover:text-purple-800 cursor-pointer"
+              className="block px-4 py-2 text-white opacity-80 hover:bg-purple-100 hover:text-purple-800 cursor-pointer bg-purple-900"
               onClick={() => setIsOpen(false)}
             >
               Home
@@ -113,7 +113,7 @@ const NavBar = () => {
               spy={true}
               offset={-80}
               duration={500}
-              className="block px-4 py-2 text-white opacity-80 hover:bg-purple-100 hover:text-purple-800 cursor-pointer"
+              className="block px-4 py-2 text-white opacity-80 hover:bg-purple-100 hover:text-purple-800 cursor-pointer bg-purple-900"
               onClick={() => setIsOpen(false)}
             >
               About
@@ -124,7 +124,7 @@ const NavBar = () => {
               spy={true}
               offset={-80}
               duration={500}
-              className="block px-4 py-2 text-white opacity-80 hover:bg-purple-100 hover:text-purple-800 cursor-pointer"
+              className="block px-4 py-2 text-white opacity-80 hover:bg-purple-100 hover:text-purple-800 cursor-pointer bg-purple-900"
               onClick={() => setIsOpen(false)}
             >
               Projects
@@ -135,7 +135,7 @@ const NavBar = () => {
               spy={true}
               offset={-80}
               duration={500}
-              className="block px-4 py-2 text-white opacity-80 hover:bg-purple-100 hover:text-purple-800 cursor-pointer"
+              className="block px-4 py-2 text-white opacity-80 hover:bg-purple-100 hover:text-purple-800 cursor-pointer bg-purple-900"
               onClick={() => setIsOpen(false)}
             >
               Skills
