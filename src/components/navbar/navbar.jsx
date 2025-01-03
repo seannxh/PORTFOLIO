@@ -2,6 +2,12 @@ import { useState } from "react";
 import { Link } from "react-scroll";
 import contactus from "../../assets/contactus.png";
 import logo from "../../assets/vision.jpeg";
+import { 
+  logoGithub, 
+  mailOutline, 
+  logoLinkedin 
+} from 'ionicons/icons';
+import { IonIcon } from '@ionic/react';
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +18,7 @@ const NavBar = () => {
       <img src={logo} alt="Logo" className="w-20 h-auto" />
 
       {/* Navbar Links (Desktop) */}
-      <div className="hidden md:flex space-x-6">
+      <div className="hidden md:flex justify-center items-center space-x-6 w-full">
         <Link
           to="intro"
           smooth={true}
@@ -65,12 +71,28 @@ const NavBar = () => {
         target="_blank" 
         rel="noopener noreferrer"
       >
-        <button className="hidden md:flex items-center justify-center gap-2 bg-white text-black border-2 border-purple-800 rounded-full px-4 py-2 text-lg font-medium transition-all hover:bg-purple-800 hover:text-white transform hover:scale-105">
-          <img src={contactus} alt="Contact" className="w-8 h-auto" />
-          Contact Me
-        </button>
+        
       </a>
-
+      <div className="flex justify-center items-center gap-4 md:gap-8 mt-4 md:mt-0">
+  <a
+    href="https://github.com/seannxh"
+    className="text-3xl md:text-4xl hover:text-gray-400"
+  >
+    <IonIcon icon={logoGithub} />
+  </a>
+  <a
+    href="mailto:nohsean6@gmail.com"
+    className="text-3xl md:text-4xl hover:text-gray-400"
+  >
+    <IonIcon icon={mailOutline} />
+  </a>
+  <a
+    href="https://www.linkedin.com/in/seannxh/"
+    className="text-3xl md:text-4xl hover:text-gray-400"
+  >
+    <IonIcon icon={logoLinkedin} />
+  </a>
+</div>
       {/* Hamburger Menu (Mobile) */}
       <div className="md:hidden relative">
         <button

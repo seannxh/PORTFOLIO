@@ -85,7 +85,7 @@ const Projects = () => {
             <div className="flex gap-4">
             {/* Live Site Button */}
             <a
-                href="https://dashboard.render.com/static/srv-csols1t6l47c73922r70" 
+                href="https://assetmanagement-vsbf.onrender.com" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-purple-800 text-white px-4 py-2 rounded-full hover:bg-purple-600 transition"
@@ -95,12 +95,12 @@ const Projects = () => {
 
             {/* GitHub Repo Button */}
             <a
-                href="https://github.com/seannxh/DACFEWEBSITE"
+                href="https://github.com/seannxh/ASSET-MANAGER"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-purple-800 text-white px-4 py-2 rounded-full hover:bg-purple-600 transition"
             >
-                GitHub FE Repo
+                GitHub Repo
             </a>
             </div>
           </div>
@@ -125,7 +125,7 @@ const Projects = () => {
             <div className="flex gap-4">
             {/* Live Site Button */}
             <a
-                href="https://assetmanagement-vsbf.onrender.com" 
+                href="https://ferestraunt-gvvc.onrender.com/home" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-purple-800 text-white px-4 py-2 rounded-full hover:bg-purple-600 transition"
@@ -135,7 +135,7 @@ const Projects = () => {
 
             {/* GitHub Repo Button */}
             <a
-                href="https://github.com/seannxh/ASSET-MANAGER" 
+                href="https://github.com/seannxh/DACFEWEBSITE" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-purple-800 text-white px-4 py-2 rounded-full hover:bg-purple-600 transition"
