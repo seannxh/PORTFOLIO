@@ -84,7 +84,7 @@ const Projects = () => {
             <div className="flex gap-4">
             {/* Live Site Button */}
             <a
-                href="https://main.d2y11439p4s8xr.amplifyapp.com/" 
+                href="https://www.finacialstone.us/" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-purple-800 text-white px-4 py-2 rounded-full hover:bg-purple-600 transition"
