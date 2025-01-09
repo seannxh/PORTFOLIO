@@ -1,7 +1,6 @@
-import TechScroller from '../techscroller/techscroller.jsx'
 import freelance from '../../../public/freelance.png'
 import wordle from '../../../public/wordle.png'
-import asset from '../../../public/asset.png'
+import bank from '../../../public/bank.png'
 const Projects = () => {
     return (
       <section
@@ -71,21 +70,21 @@ const Projects = () => {
           {/* Project 2 */}
           <div className="flex flex-col items-center text-center rounded-lg p-6 shadow-lg hover:shadow-2xl transition">
             <h2 className="text-xl font-semibold text-purple-800 mb-4">
-              Asset Management
+              Finacial Stone Inc.
             </h2>
             <img
-            src={asset}
+            src={bank}
             alt="Wordle Project"
             className="w-full h-40 object-cover rounded-lg mb-4"
           />
-            <h4 className ="text-md font-bold text-purple-500">Track Your Net Worth!</h4>
+            <h4 className ="text-md font-bold text-purple-500">A Full On Banking Website!</h4>
             <p className="text-white opacity-80 mb-4 mt-4">
-            A full-stack asset management application built with React, Node.js, and MongoDB, featuring user authentication, asset categorization, and a robust system for creating, updating, and managing assets. It also includes a secure and intuitive interface to track financial data such as stocks, real estate, vehicles, and savings.
+               A full-stack banking application built with React for the frontend, Python Django for the backend, and PostgreSQL as the database. It features user authentication, account management, and secure financial transactions. Users can view detailed account summaries, track transaction history, and perform transfers between accounts. The application also includes intuitive UI elements, ensuring a seamless banking experience for managing personal and business finances efficiently.
             </p>
             <div className="flex gap-4">
             {/* Live Site Button */}
             <a
-                href="https://assetmanagement-vsbf.onrender.com" 
+                href="https://main.d2y11439p4s8xr.amplifyapp.com/" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-purple-800 text-white px-4 py-2 rounded-full hover:bg-purple-600 transition"
@@ -95,7 +94,7 @@ const Projects = () => {
 
             {/* GitHub Repo Button */}
             <a
-                href="https://github.com/seannxh/ASSET-MANAGER"
+                href="https://github.com/seannxh/BANKAPP"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-purple-800 text-white px-4 py-2 rounded-full hover:bg-purple-600 transition"
