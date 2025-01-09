@@ -19,6 +19,7 @@ const TechScroller = () => {
       "GitHub",
       "TypeScript",
       "HTML5",
+      "AWS Amplify",
       "CSS3",
       "JQuery",
     ];

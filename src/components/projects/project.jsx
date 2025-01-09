@@ -79,7 +79,7 @@ const Projects = () => {
           />
             <h4 className ="text-md font-bold text-purple-500">A Full On Banking Website!</h4>
             <p className="text-white opacity-80 mb-4 mt-4">
-               A full-stack banking application built with React for the frontend, Python Django for the backend, and PostgreSQL as the database. It features user authentication, account management, and secure financial transactions. Users can view detailed account summaries, track transaction history, and perform transfers between accounts. The application also includes intuitive UI elements, ensuring a seamless banking experience for managing personal and business finances efficiently.
+               A full-stack banking application built with React for the frontend, Python Django for the backend, and PostgreSQL as the database. It features user authentication, account management, and secure financial transactions. Users can view detailed account summaries, track transaction history, and perform transfers between accounts. The application also includes intuitive UI elements, ensuring a seamless banking experience for managing personal and business finances efficiently. <br/> <br/> Deployed using AWS Amplify.
             </p>
             <div className="flex gap-4">
             {/* Live Site Button */}
