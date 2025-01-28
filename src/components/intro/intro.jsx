@@ -4,7 +4,7 @@ import Typer from "../typewriter/typewriter.jsx"
 
 const Intro = () => {
   return (
-    <section name="intro" className="relative h-[calc(100vh-10rem)] w-full max-w-7xl mx-auto overflow-hidden flex flex-col-reverse md:flex-row items-center justify-between p-8">
+    <section name="intro" className="relative min-h-screen w-full max-w-7xl mx-auto overflow-hidden flex flex-col-reverse md:flex-row items-center justify-between p-8">
       {/* Text Content */}
       <div className="m-5 text-center md:text-left flex flex-col justify-center md:items-start items-center text-3xl font-semibold">
       <Typer
