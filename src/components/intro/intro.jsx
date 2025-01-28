@@ -33,8 +33,8 @@ const Intro = () => {
           </h8>
         </p>
         <a
-          href = "/seansresume.pdf"
-          download="seansresume.pdf"
+          href = "/seansswe.pdf"
+          download="seansswe.pdf"
           >
           <button className="flex items-center justify-center gap-2 px-8 py-2 mt-4 text-sm font-medium text-black transition-all duration-300 ease-in-out bg-white border-2 border-purple-800 rounded-full hover:bg-purple-800 hover:text-white hover:scale-105">
             <img src={hireme} alt="Contact Us" className="w-6" />
