@@ -14,7 +14,7 @@ const About = () => {
   
         {/* About Description */}
         <p className="text-lg text-white opacity-80 text-center leading-relaxed max-w-3xl mx-auto mb-12">
-        I am a passionate Software Engineer and Full Stack Developer with expertise in both front-end and back-end development. On the front end, I craft intuitive, responsive user interfaces using modern frameworks like React, Next.js, HTML, CSS, and Tailwind, ensuring seamless user experiences through clean, efficient code. On the back end, I build robust, scalable server-side applications with Node.js, Express, and MongoDB, focusing on performance, security, and maintainability. I am proficient in JavaScript, Git, GitLab, and MySQL, and I leverage tools like PostgreSQL and Power BI for data-driven insights. I am currently expanding my expertise by developing skills in Python, Django, and AWS Solutions Architect Associate (SAA), equipping me to build even more versatile and high-performing applications.
+        I am a passionate Software Engineer and Full Stack Developer with expertise in both front-end and back-end development. On the front end, I craft intuitive, responsive user interfaces using modern frameworks like React, Next.js, HTML, CSS, and Tailwind, ensuring seamless user experiences through clean, efficient code. On the back end, I build robust, scalable server-side applications with Node.js, Express, and MongoDB, focusing on performance, security, and maintainability. I am proficient in JavaScript, Git, GitLab, and MySQL, and I leverage tools like PostgreSQL and Power BI for data-driven insights. I am currently expanding my expertise by developing skills in Java, and AWS Solutions Architect Associate (SAA), equipping me to build even more versatile and high-performing applications.
         </p>
   
         {/* About Bars */}
@@ -32,7 +32,7 @@ const About = () => {
             <p className="text-white opacity-80">
               I aspire to create impactful software solutions that drive
               innovation, enhance user experiences, and solve real-world problems
-              through technology.
+              through technology. I want to see my creation come to life!
             </p>
           </div>
   
@@ -49,7 +49,7 @@ const About = () => {
             <p className="text-white opacity-80">
               I am driven by a passion for learning, problem-solving, and creating
               technology that makes a difference, inspiring me to continuously
-              improve and innovate.
+              improve and innovate. Nothing feels better than debugging after hours of brickwall!
             </p>
           </div>
   
@@ -66,7 +66,7 @@ const About = () => {
             <p className="text-white opacity-80">
               My fascination with technology and its potential to transform lives
               led me to pursue software engineering. I love the challenge of
-              turning ideas into reality through code.
+              turning ideas into reality through code. This has been my goal since I was 8!
             </p>
           </div>
         </div>
