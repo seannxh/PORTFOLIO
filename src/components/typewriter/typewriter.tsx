@@ -1,17 +1,25 @@
 import React, { useState, useEffect, useRef } from 'react';
-import './typrwriter.css'
-const Typer = ({ phrases, speed, deleteSpeed, displayTime }) => {
-  const [text, setText] = useState('');
-  const [phraseIndex, setPhraseIndex] = useState(0);
-  const [isDeleting, setIsDeleting] = useState(false);
-  const [isTyping, setIsTyping] = useState(true);
-  const containerRef = useRef(null);
+import './typrwriter.css';
 
-  const currentTextLength = useRef(0);
+interface TyperProps {
+  phrases: string[];
+  speed: number;
+  deleteSpeed: number;
+  displayTime: number;
+}
+
+const Typer: React.FC<TyperProps> = ({ phrases, speed, deleteSpeed, displayTime }) => {
+  const [text, setText] = useState<string>('');
+  const [phraseIndex, setPhraseIndex] = useState<number>(0);
+  const [isDeleting, setIsDeleting] = useState<boolean>(false);
+  const [isTyping, setIsTyping] = useState<boolean>(true);
+  const containerRef = useRef<HTMLDivElement | null>(null);
+
+  const currentTextLength = useRef<number>(0);
 
   useEffect(() => {
     const phrase = phrases[phraseIndex];
-    let timer;
+    let timer: NodeJS.Timeout;
 
     if (isTyping) {
       timer = setTimeout(() => {

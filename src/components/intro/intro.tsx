@@ -1,18 +1,21 @@
 import profilepic from "../../assets/profile.png";
 import hireme from "../../assets/getintouch.png";
-import Typer from "../typewriter/typewriter.jsx"
+import Typer from "../typewriter/typewriter";
+import React from "react";
 
-const Intro = () => {
+const Intro: React.FC = () => {
   return (
-    <section name="intro" className="relative min-h-screen w-full max-w-7xl mx-auto overflow-hidden flex flex-col-reverse md:flex-row items-center justify-between p-8">
-      {/* Text Content */}
+    <section
+      id="intro"
+      className="relative min-h-screen w-full max-w-7xl mx-auto overflow-hidden flex flex-col-reverse md:flex-row items-center justify-between p-8"
+    >
       <div className="m-5 text-center md:text-left flex flex-col justify-center md:items-start items-center text-3xl font-semibold">
-      <Typer
-            phrases={["Welcome!", "Turning My Idea Into Reality"]}
-            speed={80}
-            deleteSpeed={50}
-            displayTime={2000}
-          />
+        <Typer
+          phrases={["Welcome!", "Turning My Idea Into Reality"]}
+          speed={80}
+          deleteSpeed={50}
+          displayTime={2000}
+        />
         <div>
           <span className="text-purple-800">Sean's </span>
           <span>Portfolio</span>
@@ -23,25 +26,21 @@ const Intro = () => {
         </span>
         <p className="mt-4 text-lg font-light">
           Hi, I code for a living!
-          <br/>
-          <p>
-            I love every part of it! 💜
-          </p>
-          <br/>
-          <h8>
+          <br />
+          I love every part of it! 💜
+          <br />
+          <span>
             As you scroll through you will find my favorite color is purple! 💜
-          </h8>
+          </span>
         </p>
-        <a
-          href = "/nxhswe.pdf"
-          download="nxhswe.pdf"
-          >
+        <a href="/nxhswe.pdf" download="nxhswe.pdf">
           <button className="flex items-center justify-center gap-2 px-8 py-2 mt-4 text-sm font-medium text-black transition-all duration-300 ease-in-out bg-white border-2 border-purple-800 rounded-full hover:bg-purple-800 hover:text-white hover:scale-105">
             <img src={hireme} alt="Contact Us" className="w-6" />
             Resume!
           </button>
         </a>
       </div>
+
       {/* Profile Image */}
       <div className="flex-shrink-0 mt-20 md:mt-16 mb-8 md:mb-0">
         <img
