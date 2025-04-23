@@ -12,6 +12,8 @@ import React from "react";
 const NavBar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const navSections = ['intro', 'about', 'projects', 'skills', 'education'];
+
   return (
     <nav className="sticky top-0 z-30 flex items-center justify-between h-20 w-full px-5 max-w-7xl mx-auto shadow-md">
       {/* Logo */}
@@ -19,7 +21,7 @@ const NavBar: React.FC = () => {
 
       {/* Navbar Links (Desktop) */}
       <div className="hidden md:flex justify-center items-center space-x-6 w-full">
-        {['intro', 'about', 'projects', 'skills'].map((section) => (
+        {navSections.map((section) => (
           <Link
             key={section}
             to={section}
@@ -73,7 +75,7 @@ const NavBar: React.FC = () => {
         {/* Dropdown Menu */}
         {isOpen && (
           <div className="absolute top-12 right-0 w-48 bg-grey-800 shadow-lg rounded-lg py-2 z-40">
-            {['intro', 'about', 'projects', 'skills'].map((section) => (
+            {navSections.map((section) => (
               <Link
                 key={section}
                 to={section}
