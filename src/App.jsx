@@ -3,7 +3,9 @@ import Intro from './components/intro/intro'
 import About from './components/about/about'
 import Projects from './components/projects/project'
 import TechScroller from './components/techscroller/techscroller'
+import EducationSection from './components/education/education.tsx'
 import Footer from './components/footer/footer'
+
 import './index.css'
 import './App.css'
 
@@ -18,6 +20,7 @@ function App() {
             <About/>
               <Projects/>
             <TechScroller/>
+            <EducationSection/>
           <Footer/>
         </div>
     </div>
