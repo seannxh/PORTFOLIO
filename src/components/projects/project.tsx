@@ -1,6 +1,7 @@
 import freelance from '../../../public/freelance.png'
 import wordle from '../../../public/wordle.png'
 import bank from '../../../public/bank.png'
+import expense from '../../../public/expense.png'
 import React from 'react';
 
 const Projects: React.FC = () => {
@@ -15,15 +16,10 @@ const Projects: React.FC = () => {
           impactful user experiences. Each project demonstrates my ability to
           turn ideas into functional and scalable applications.
         </p>
-        <h5 className="text-sm text-white opacity-80 max-w-3xl mx-auto mt-3">
-          Ps: The Websites are deployed on Render so they might take a couple of minutes to load!
-          <br />
-          Thank you for your patience
-        </h5>
       </div>
 
       {/* Projects Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
         {[
           {
             title: 'Wordle',
@@ -40,14 +36,21 @@ const Projects: React.FC = () => {
             repoLink: 'https://github.com/seannxh/BANKAPP',
           },
           {
-            title: "Freelance - Don's Asian Cuisine",
+            title: "Restaurant Website ",
             image: freelance,
             description: 'A modern website for a local restaurant with responsive design and dynamic content.',
             liveLink: 'https://ferestraunt-gvvc.onrender.com/home',
             repoLink: 'https://github.com/seannxh/DACFEWEBSITE',
+          },
+          {
+            title: "Expense Tracker App",
+            image: expense,
+            description: "A full-stack app to track expenses with secure login, data visualization, and AWS deployment.",
+            liveLink: 'http://expensefrontendreal.s3-website-us-east-1.amazonaws.com/login',
+            repoLink: 'https://github.com/seannxh/ExpenseTrackerFE',
           }
         ].map((project, index) => (
-          <div key={index} className="flex flex-col items-center text-center rounded-lg p-6 shadow-lg hover:shadow-2xl transition">
+          <div key={index} className="flex flex-col items-center text-center rounded-lg shadow-lg hover:shadow-2xl transition">
             <h2 className="text-xl font-semibold text-purple-800 mb-4">{project.title}</h2>
             <img src={project.image} alt={project.title} className="w-full h-40 object-cover rounded-lg mb-4" />
             <p className="text-white opacity-80 mb-4 mt-4">{project.description}</p>
