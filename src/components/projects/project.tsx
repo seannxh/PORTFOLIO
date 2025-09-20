@@ -11,10 +11,18 @@ const Projects: React.FC = () => {
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold text-purple-800 mb-4">Projects</h1>
         <p className="text-lg text-white opacity-80 max-w-3xl mx-auto">
-          Here are some of the exciting projects I've worked on, showcasing my
-          expertise in full-stack development, problem-solving, and creating
-          impactful user experiences. Each project demonstrates my ability to
-          turn ideas into functional and scalable applications.
+           A collection of full-stack projects that highlight my skills in building
+            scalable apps, solving problems, and creating smooth user experiences.
+        </p>
+      </div>
+
+      <div className="bg-white/10 border border-white/20 rounded-lg p-4 text-white text-sm max-w-md mx-auto mb-20">
+        <p className="font-semibold text-yellow-200 mb-1">Demo Credentials:</p>
+        <p>
+          <span className="font-medium">Username:</span> user@testing.com
+        </p>
+        <p>
+          <span className="font-medium">Password:</span> User123!
         </p>
       </div>
 
@@ -31,8 +39,8 @@ const Projects: React.FC = () => {
           {
             title: 'Financial Stone Inc.',
             image: bank,
-            description: 'A full-stack banking application with React, Django, and PostgreSQL.',
-            liveLink: 'https://bankapp-4gry.onrender.com',
+            description: 'A full-stack banking application with React, Django, PostgreSQL, and AWS deployment.',
+            liveLink: 'https://finacialstone.us/',
             repoLink: 'https://github.com/seannxh/BANKAPP',
           },
           {
@@ -45,21 +53,21 @@ const Projects: React.FC = () => {
           {
             title: "Expense Tracker App",
             image: expense,
-            description: "A full-stack app to track expenses with secure login, data visualization, and AWS deployment.",
+            description: "A full-stack app to track expenses with data visualization, and AWS deployment.",
             liveLink: 'http://expensefrontendreal.s3-website-us-east-1.amazonaws.com/login',
             repoLink: 'https://github.com/seannxh/ExpenseTrackerFE',
           }
         ].map((project, index) => (
-          <div key={index} className="flex flex-col items-center text-center rounded-lg shadow-lg hover:shadow-2xl transition">
+          <div key={index} className="w-50 flex flex-col items-center text-center rounded-lg shadow-lg hover:shadow-2xl transition">
             <h2 className="text-xl font-semibold text-purple-800 mb-4">{project.title}</h2>
-            <img src={project.image} alt={project.title} className="w-full h-40 object-cover rounded-lg mb-4" />
-            <p className="text-white opacity-80 mb-4 mt-4">{project.description}</p>
-            <div className="flex gap-4">
+            <img src={project.image} alt={project.title} className="w-full h-40 object-cover p-6 rounded-lg mb-4" />
+            <p className="text-white opacity-80 mb-4 p-6 mt-4">{project.description}</p>
+            <div className="flex gap-5 mb-6">
               <a href={project.liveLink} target="_blank" rel="noopener noreferrer" className="bg-purple-800 text-white px-4 py-2 rounded-full hover:bg-purple-600 transition">
-                Live Site
+                Live
               </a>
               <a href={project.repoLink} target="_blank" rel="noopener noreferrer" className="bg-purple-800 text-white px-4 py-2 rounded-full hover:bg-purple-600 transition">
-                GitHub Repo
+                GitHub
               </a>
             </div>
           </div>

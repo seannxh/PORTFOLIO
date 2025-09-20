@@ -2,28 +2,36 @@ import React from 'react';
 import './techscroller.css';
 
 const TechScroller: React.FC = () => {
-  const technologies: string[] = [
-    "JavaScript",
-    "React",
-    "Node.js",
-    "Express.js",
-    "MongoDB",
-    "Next.js",
-    "mySQL",
-    "TailwindCSS",
-    "BootStrap",
-    "PostgreSQL",
-    "Python",
-    "Power Bi",
-    "Django",
-    "Git",
-    "GitHub",
-    "TypeScript",
-    "HTML5",
-    "AWS Amplify",
-    "CSS3",
-    "JQuery",
-  ];
+const technologies: string[] = [
+  "JavaScript",
+  "TypeScript",
+  "React",
+  "Node.js",
+  "Express.js",
+  "Spring Boot",
+  "Python",
+  "Django",
+  "Java",
+  "PostgreSQL",
+  "MySQL",
+  "MongoDB",
+  "HTML5",
+  "CSS3",
+  "TailwindCSS",
+  "Recharts",
+  "Bootstrap",
+  "Git",
+  "GitHub",
+  "Maven",
+  "Postman",
+  "JUnit",
+  "Jest",
+  "Selenium",
+  "Docker",
+  "AWS",
+  "GitHub Actions",
+];
+
 
   const techList = [...technologies, ...technologies, ...technologies];
 
